@@ -13,7 +13,7 @@ This project is an ecommerce website developed using HTML, CSS, and JavaScript. 
 
 - Login Page: Users can log in using their credentials.
 - Home Page: Displays categories such as fashion, books, groceries, electronics, and home decor.
-- Category Pages: Each category (Fashion, Books, Groceries, Electronics, Home Decor) has its own page displaying relevant products.
+- Category Pages: Click Swinging images go for different categories (Fashion, Books, Groceries, Electronics, Home Decor) has its own page displaying relevant products.
 - Cart Page: Shows items added to the cart with options to modify quantities or remove items.
 
 ## Tools
@@ -41,9 +41,15 @@ To run this project locally, follow these steps:
 
 ## Screenshots
 Home Page
-![image](https://github.com/user-attachments/assets/ab7d31a7-3ef1-4ec0-b057-76634bf5c259)
+![image](https://github.com/user-attachments/assets/7ffcd20a-0abd-488b-89f9-527d35c98243)
+![image](https://github.com/user-attachments/assets/d00ee930-413e-40d0-8799-24dbb687affd)
+![image](https://github.com/user-attachments/assets/f429f62f-5bf4-4778-84d5-58497fc7e5e5)
+![image](https://github.com/user-attachments/assets/f7a81da9-cba4-43ef-b79c-e7850e822397)
+![image](https://github.com/user-attachments/assets/6903e594-7d5f-43b2-b578-5d9cbf14d224)
 
-![image](https://github.com/user-attachments/assets/2f379227-e3c8-4b25-9700-d49d3239e539)
+
+
+
 Fashion Page
 ![image](https://github.com/user-attachments/assets/b7f95fe3-1769-466a-9e97-9af1e977765e)
 Groceries Page
