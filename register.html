@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="register.css">
+    <script>
+        function validateForm() {
+            let x = document.myForm.fname.value;
+            if (x == "") {
+                alert("Name must be filled out");
+                return false;
+            }
+            let password1 = document.forms["myForm"]["pass"].value;
+            let password2 = document.forms["myForm"]["passw"].value;
+            if (password1 == '')
+                alert("Please enter Password");
+
+     
+            else if (password2 == '')
+                alert("Please enter confirm password");
+
+  
+            else if (password1 != password2) {
+                alert("\nPassword did not match: Please try again...")
+                return false;
+            }
+
+
+            else {
+                return true;
+            }
+            
+
+
+            
+        }
+        function sty(x)
+        {
+            x.style.background="lightblue";
+        }
+    </script>
+</head>
+
+<body>
+
+
+
+
+
+    
+    <div class="login" style="background-color:rgb(92, 194, 228)">  
+    <form style="text-align:left ;" name="myForm" action="login.html" onsubmit="return validateForm()"
+        method="post" id="login">
+        <h1 style="text-align:center;color:aquamarine;">REGISTER</h1>
+        <label for="t"><b>Name</b><span>*</span></label>
+        <input type="text" name="fname" id="t" onfocus="sty(this)">
+
+        <br><br>
+        <label for="ph"><b>Phone</b><span>*</span></label>
+        <input type="number" name="ph" id="ph" onfocus="sty(this)">
+
+        <br><br>
+
+        <label for="email"><b>Email</b><span>*</span></label>
+        <input type="email" name="emailAddr" id="email" onfocus="sty(this)">
+        <br><br>
+
+
+        <label for="pass"><b>Password</b> (6-8 characters)<span>*</span></label>
+        <input type="password" name="pass" id="pass" onfocus="sty(this)">
+
+        <br><br>
+
+
+        <label for="passw">Verify Password<span>*</span></label>
+        <input type="password" name="passw" id="passw" onfocus="sty(this)">
+        <br>
+
+        <a href="login.html"><input type="submit" value="Sign Up" name="log" id="log"></a>
+    </form></div>
+
+</body>
+<style>
+    span {
+        color: red;
+    }
+</style>
+
+</html>

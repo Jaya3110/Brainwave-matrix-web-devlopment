@@ -1,0 +1,57 @@
+<html>
+  <head>  
+    <link rel="stylesheet" type="text/css" href="register.css">  
+    <script>
+        function validateForm() {
+            let x = document.myForm.fname.value;
+            if (x == "") {
+                alert("Name must be filled out");
+                return false;
+            }
+            let password1 = document.forms["myForm"]["pass"].value;
+            
+            if (password1 == '')
+                alert("Please enter Password");
+
+     
+            
+
+
+            else {
+                return true;
+            }
+
+
+            
+        }
+        function sty(x)
+        {
+            x.style.background="lightblue";
+        }
+    </script>
+ </head>
+ <body>     
+  <div class="login">    
+  <form id="login" method="get" action="index.html" style="text-align:left" onsubmit="return validateForm()">
+    <h1 style="text-align:center;color:aquamarine;">LOGIN</h1>    
+      <label><b>User Name     
+      </b>    
+      </label>    
+      <input type="text" name="fname" id="t" placeholder="Username" on onfocus="sty(this)">    
+      <br><br>    
+      <label><b>Password     
+      </b>    
+      </label>    
+      <input type="Password" name="pass" id="pass" placeholder="Password" onfocus="sty(this)">    
+      <br><br>    
+      <a href="index.html"><input type="button" name="log" id="log" value="Sign In" ></a><br>
+      <label style="margin-left:50px;">Not a member?</label>
+      <a href="register.html">
+      <input type="button" value="Register" id="reg" style="background-color:aqua" ></a>
+      <br><br>    
+         
+      
+  </form>     
+</div>    
+</body>    
+</html>

@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>complete responsive grocery website design tutorial</title>
+
+    
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="groceries.css">
+    
+
+
+</head>
+<body>
+
+<!-- header section starts  -->
+
+<header>
+
+    <div class="header-1">
+
+        <a href="#" class="logo"><i class="fas fa-shopping-basket"></i>GROCERIES</a>
+
+
+    </div>
+
+    <div class="header-2">
+
+        <div id="menu-bar" class="fas fa-bars"></div>
+
+        <nav class="navbar">
+            <a href="index.html">home</a>
+            <a href="#category">category</a>
+            <a href="#product">product</a>
+            <a href="#deal">deal</a>
+            
+        </nav>
+
+    </div>
+
+</header>
+
+
+<section class="home" id="home">
+    
+
+    <div class="image">
+        <img src="groceryi/home-img.png" alt="">
+    </div>
+
+    <div class="content">
+        <span style="font-style:italic;color: cornflowerblue;">fresh and organic</span>
+        <h3 style="font-family:cursive">your daily need products</h3>
+        
+    </div>
+
+</section>
+
+<section class="banner-container">
+
+    <div class="banner">
+        <img src="groceryi/banner-1.jpg" alt="">
+        <div class="content">
+            <h3>special offer</h3>
+            <p>upto 45% off</p>
+            <a href="C:\Users\sahit\OneDrive\Desktop\UI Design\productdetails1.html" class="btn">check out</a>
+        </div>
+    </div>
+
+    <div class="banner">
+        <img src="groceryi/banner-2.jpg" alt="">
+        <div class="content">
+            <h3>limited offer</h3>
+            <p>upto 50% off</p>
+            <a href="#" class="btn">check out</a>
+        </div>
+    </div>
+
+</section>
+
+<section class="category" id="category">
+
+    <h1 class="heading">shop by <span>category</span></h1>
+
+    <div class="box-container">
+
+        <div class="box" >
+            <h3>Fruits</h3>
+            <p>upto 50% off</p>
+            <img src="groceryi/category-1.png" alt="">
+            <a href="#f" class="btn">shop now</a>
+        </div>
+        <div class="box">
+            <h3>Vegetables</h3>
+            <p>upto 44% off</p>
+            <img src="https://images.unsplash.com/photo-1597362925123-77861d3fbac7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZnJlc2glMjB2ZWdldGFibGVzfGVufDB8fDB8fA%3D%3D&w=1000&q=80" alt="">
+            <a href="#v" class="btn">shop now</a>
+        </div>
+        <div class="box">
+            <h3>Spices</h3>
+            <p>upto 35% off</p>
+            <img src="https://info.ehl.edu/hubfs/1440/1440x960-spices.jpg" alt="">
+            <a href="#s" class="btn">shop now</a>
+        </div>
+        <div class="box">
+            <h3>Diary Products</h3>
+            <p>upto 12% off</p>
+            <img src="data:image/jpeg;base64,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" alt="">
+            <a href="#d" class="btn">shop now</a>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="product" id="product">
+
+    <h1 class="heading" id="f"><span>FRUITS</span></h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <span class="discount">-14%</span>
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <img src="groceryi/product-1.png" alt="" id="img">
+            <h3>organic banana</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="price" id="price">Rs 60<span>  Rs 70</span> </div>
+            <div class="quantity">
+                <span>quantity : </span>
+                <input type="number" min="1" max="1000" value="1">
+                <span> /kg </span>
+            </div>
+            <a href="#" class="btn" onclick="alert('adding to cart')">add to cart</a>
+        </div>
+
+        <div class="box">
+            <span class="discount">-15%</span>
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <img src="https://sc01.alicdn.com/kf/HTB19cMWafb2gK0jSZK9q6yEgFXa6.jpg_.webp" alt="">
+            <h3>Straw berries</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="price"> Rs 100 <span> Rs 120 </span> </div>
+            <div class="quantity">
+                <span>quantity : </span>
+                <input type="number" min="1" max="1000" value="1">
+                <span> /kg </span>
+            </div>
+            <a href="#" class="btn" onclick="alert('adding to cart')">add to cart</a>
+        </div>
+
+        <div class="box">
+            <span class="discount">-5%</span>
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <img src="groceryi/product-3.png" alt="">
+            <h3>organic orange</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="price"> Rs 65 <span> Rs 70 </span> </div>
+            <div class="quantity">
+                <span>quantity : </span>
+                <input type="number" min="1" max="1000" value="1">
+                <span> /kg </span>
+            </div>
+            <a href="#" class="btn" onclick="alert('adding to cart')">add to cart</a>
+        </div>
+
+        <div class="box">
+            <span class="discount">-15%</span>
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+            </div>s
+            <img src="https://www.bigbasket.com/media/uploads/p/xxl/40033819-2_6-fresho-apple-shimla.jpg" alt="">
+            <h3>Kashmir Apples</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="price"> Rs 120 <span> Rs 130 </span> </div>
+            <div class="quantity">
+                <span>quantity : </span>
+                <input type="number" min="1" max="1000" value="1">
+                <span> /kg </span>
+            </div>
+            <a href="#" class="btn" onclick="alert('adding to cart')">add to cart</a>
+        </div>
+    </div>
+    
+    
+    
+
+    <h1 class="heading" id="v"><span>VEGETABLES</span></h1>
+
+    <div class="box-container">
+        <div class="box">
+            <span class="discount">-20%</span>
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <img src="https://5.imimg.com/data5/ANDROID/Default/2021/2/UH/HH/LB/44089979/potatoes-jpg-500x500.jpg" alt="">
+            <h3>Potatoes</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="price"> Rs 40 <span> Rs 50 </span> </div>
+            <div class="quantity">
+                <span>quantity : </span>
+                <input type="number" min="1" max="1000" value="1">
+                <span> /kg </span>
+            </div>
+            <a href="#" class="btn" onclick="alert('adding to cart')">add to cart</a>
+        </div>
+        <div class="box">
+            <span class="discount">-20%</span>
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <img src="http://www.fresh-square.com/wp-content/uploads/2016/10/Cherry-Tomato.jpg" alt="">
+            <h3>Tomatoes</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="price"> Rs 30 <span> Rs 40 </span> </div>
+            <div class="quantity">
+                <span>quantity : </span>
+                <input type="number" min="1" max="1000" value="1">
+                <span> /kg </span>
+            </div>
+            <a href="#" class="btn">add to cart</a>
+        </div>
+        <div class="box">
+            <span class="discount">-30%</span>
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <img src="https://img1.exportersindia.com/product_images/bc-full/2018/9/5886953/good-quality-fresh-and-frozen-brocoli-cabbage-1537200420-4311818.jpeg" alt="">
+            <h3>Broccoli</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="price"> Rs 140 <span> Rs 200  </span> </div>
+            <div class="quantity">
+                <span>quantity : </span>
+                <input type="number" min="1" max="1000" value="1">
+                <span> /kg </span>
+            </div>
+            <a href="#" class="btn" onclick="alert('adding to cart')">add to cart</a>
+        </div>
+        <div class="box">
+            <span class="discount">-30%</span>
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <img src="https://m.media-amazon.com/images/I/710EvtgG++L._SX466_.jpg" alt="">
+            <h3>Carrots</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="price"> Rs 70 <span> Rs 100 </span> </div>
+            <div class="quantity">
+                <span>quantity : </span>
+                <input type="number" min="1" max="1000" value="1">
+                <span> /kg </span>
+            </div>
+            <a href="#" class="btn" onclick="alert('adding to cart')">add to cart</a>
+        </div></div>
+        <h1 class="heading" id="s"><span>SPICES AND OTHERS</span></h1>
+
+        <div class="box-container">
+            <div class="box">
+                <span class="discount">-10%</span>
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <img src="https://m.media-amazon.com/images/I/61aoHG0V6AL._SX385_.jpg" alt="">
+                <h3>Salt</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price"> Rs 70 <span> Rs 90 </span> </div>
+                <div class="quantity">
+                    <span>quantity : </span>
+                    <input type="number" min="1" max="1000" value="1">
+                    <span> /kg </span>
+                </div>
+                <a href="#" class="btn" onclick="alert('adding to cart')">add to cart</a>
+            </div>
+            <div class="box">
+                <span class="discount">-20%</span>
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=480,h=480/app/images/products/sliding_image/400105b.jpg" alt="">
+                <h3>Sugar</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price"> Rs 100 <span> Rs 120 </span> </div>
+                <div class="quantity">
+                    <span>quantity : </span>
+                    <input type="number" min="1" max="1000" value="1">
+                    <span> /kg </span>
+                </div>
+                <a href="#" class="btn" onclick="alert('adding to cart')">add to cart</a>
+            </div>
+            <div class="box">
+                <span class="discount">-30%</span>
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <img src="https://www.luluhypermarket.in/medias/318022-0001.jpg-1200Wx1200H?context=bWFzdGVyfGltYWdlc3wyMjc2NzR8aW1hZ2UvanBlZ3xoOTgvaDk3Lzg5NDUwNTI0ODM2MTQvMzE4MDIyLTAwMDEuanBnXzEyMDBXeDEyMDBIfDY1ZGFmOTgzZTZjYTE5Mjk0OGFmY2E0YmU1NmVjMWQwZTE5YWZiYWEwZTA5NDg3YTI1MDcxMzk0YzliMTIyMjA" alt="">
+                <h3>Urad dal</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price"> Rs 80 <span> Rs 90 </span> </div>
+                <div class="quantity">
+                    <span>quantity : </span>
+                    <input type="number" min="1" max="1000" value="1">
+                    <span> /kg </span>
+                </div>
+                <a href="#" class="btn" onclick="alert('adding to cart')">add to cart</a>
+            </div>
+            <div class="box">
+                <span class="discount">-30%</span>
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <img src="https://www.jiomart.com/images/product/original/492570976/neu-farm-unpolished-desi-toor-dal-1-kg-product-images-o492570976-p590891753-0-202206011226.jpg" alt="">
+                <h3>Toor dal</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price"> Rs 80 <span> Rs 90 </span> </div>
+                <div class="quantity">
+                    <span>quantity : </span>
+                    <input type="number" min="1" max="1000" value="1">
+                    <span> /kg </span>
+                </div>
+                <a href="#" class="btn" onclick="alert('adding to cart')">add to cart</a>
+            </div></div>
+            <h1 class="heading" id="d"><span>DIARY PRODUCTS</span></h1>
+
+            <div class="box-container">
+                <div class="box">
+                    <span class="discount">-10%</span>
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                    </div>
+                    <img src="https://www.bigbasket.com/media/uploads/p/l/306926-2_4-amul-homogenised-toned-milk.jpg" alt="">
+                    <h3>Toned Milk</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price"> Rs 40 <span> Rs 50 </span> </div>
+                    <div class="quantity">
+                        <span>quantity : </span>
+                        <input type="number" min="1" max="1000" value="1">
+                        <span> /pac </span>
+                    </div>
+                    <a href="#" class="btn" onclick="alert('adding to cart')">add to cart</a>
+                </div>
+                <div class="box">
+                    <span class="discount">-10%</span>
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                    </div>
+                    <img src="https://us.123rf.com/450wm/tanyasid/tanyasid2004/tanyasid200400068/144913661-sliced-butter-of-piece-butter-on-white-plate-isolated-on-white-background-.jpg?ver=6" alt="">
+                    <h3>Natural butter</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price"> Rs 110 <span> Rs 120 </span> </div>
+                    <div class="quantity">
+                        <span>quantity : </span>
+                        <input type="number" min="1" max="1000" value="1">
+                        <span> /kg </span>
+                    </div>
+                    <a href="#" class="btn" onclick="alert('adding to cart')">add to cart</a>
+                </div>
+                <div class="box">
+                    <span class="discount">-10%</span>
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                    </div>
+                    <img src="https://amul.com/files/products/Processed_Cheese_1.png" alt="">
+                    <h3>Cheese</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price"> Rs 135 <span> Rs 150 </span> </div>
+                    <div class="quantity">
+                        <span>quantity : </span>
+                        <input type="number" min="1" max="1000" value="1">
+                        <span> /kg </span>
+                    </div>
+                    <a href="C:\Users\sahit\OneDrive\Desktop\UI Design\productdetails1.html" class="btn" onclick="alert('adding to cart')">add to cart</a>
+                </div>
+                <div class="box">
+                    <span class="discount">-20%</span>
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                    </div>
+                    <img src="https://thefarmersvillage.in/wp-content/uploads/2021/09/Copy-of-Front-Paneer.png" alt="">
+                    <h3>Cottage Cheese</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price"> Rs 280 <span> Rs 350 </span> </div>
+                    <div class="quantity">
+                        <span>quantity : </span>
+                        <input type="number" min="1" max="1000" value="1">
+                        <span> /kg </span>
+                    </div>
+                    <a href="#" class="btn" onclick="alert('adding to cart')">add to cart</a>
+                </div></div>
+
+        
+
+    </div>
+
+</section>
+<section class="deal" id="deal">
+
+    <div class="content">
+
+        <h3 class="title">deal of the day</h3>
+        <p>Get on with the exciting deals and offers! HURRY UP</p>
+
+        <div class="count-down">
+            <div class="box">
+                <h3 id="day">00</h3>
+                <span>day</span>
+            </div>
+            <div class="box">
+                <h3 id="hour">00</h3>
+                <span>hour</span>
+            </div>
+            <div class="box">
+                <h3 id="minute">00</h3>
+                <span>minute</span>
+            </div>
+            <div class="box">
+                <h3 id="second">00</h3>
+                <span>second</span>
+            </div>
+        </div>
+
+        <a href="#" class="btn">check the deal</a>
+
+    </div>
+
+</section>
+
+
+
+<script>
+    let countDate = new Date('june 1, 2021 00:00:00').getTime();
+
+function CountDown(){
+
+    let now = new Date().getTime();
+    gap = countDate - now;
+
+    let second = 1000;
+    let minute = second * 60;
+    let hour = minute * 60;
+    let day = hour * 24;
+
+    let d = Math.floor(gap / (day));
+    let h = Math.floor((gap % (day)) / (hour));
+    let m = Math.floor((gap % (hour)) / (minute));
+    let s = Math.floor((gap % (minute)) / (second));
+
+    document.getElementById('day').innerText = d;
+    document.getElementById('hour').innerText = h;
+    document.getElementById('minute').innerText = m;
+    document.getElementById('second').innerText = s;
+
+}
+
+setInterval(function(){
+    CountDown();
+},1000)
+</script>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

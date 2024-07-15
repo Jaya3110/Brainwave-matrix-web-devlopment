@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SASA | Ecommerce Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sudden.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </head>
+    <body>
+        <div class="header">
+        <div class="container" height="900px">
+            <div class="navbar">
+                <div class="logo">
+                    <span style="--i:1">s</span>
+                    <span style="--i:2">a</span>
+                    <span style="--i:3">s</span>
+                    <span style="--i:4">a</span>
+                   </div>
+                    <nav>
+                        <ul id="MenuItems">
+                            <li><a href="index.html" >HOME</a> </li>
+                            <li><a href="#faq" >Hanging Categories</a> </li>
+                        </ul>
+                    </nav>
+                    <a href="add to cart.html"><img src="https://media.istockphoto.com/vectors/shopping-cart-icon-vector-id1181590456?k=20&m=1181590456&s=612x612&w=0&h=G16UdeFfAuvoLGU_yIpcXxTW2qbx3TrEC6xP5hPBNY4=" width="30px" height="30px"></a>
+                    <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+                
+                </div>
+                <div class="row">
+                    <div class="col-2">
+                        <h1 class="slogan" data-text="find it,love it,buy it">find it,love it,buy it.</h1>
+                        <p>Success isn't always about greatness. it's about consistency. consistent<br> hard work gains success. greatness will come. </p>
+                        <a href="#faq"><button class="button" role="button">EXPLORE NOW</button></a>
+                    </div>
+                    <div class="col-2">
+                        <img src="images/image1.png" alt="">
+
+                    </div>
+                </div>
+        </div>
+        </div>
+        <!-------------slide-------------->
+        <section>
+            <div class="slideshow-container">
+    
+                <div class="mySlides fade">
+                  <img src="images/sale1.jpeg" style="width:100%">
+                </div>
+                
+                <div class="mySlides fade">
+                 <a href="groceries.html" ><img src="images/sale2.jpeg" style="width:100%"></a>
+                </div>
+                
+                <div class="mySlides fade">
+                  <a href="books.html"><img src="images/sale3.jpeg" style="width:100%"></a>
+                </div>
+                
+                <div class="mySlides fade">
+                    <a href="electronics page.html"><img src="images/sale4.jpeg" style="width:100%"></a>
+                  </div>
+                
+                  <div class="mySlides fade">
+                    <a href="source.html"><img src="images/sale5.jpeg" style="width:100%"></a>
+                  </div>    
+                
+                </div>
+                <br>
+                
+                <div style="text-align:center">
+                  <span class="dot"></span> 
+                  <span class="dot"></span> 
+                  <span class="dot"></span> 
+                  <span class="dot"></span> 
+                  <span class="dot"></span> 
+                </div>
+                
+                <script>
+                let slideIndex = 0;
+                showSlides();
+                
+                function showSlides() {
+                  let i;
+                  let slides = document.getElementsByClassName("mySlides");
+                  let dots = document.getElementsByClassName("dot");
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                  }
+                  slideIndex++;
+                  if (slideIndex > slides.length) {slideIndex = 1}    
+                  for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";  
+                  dots[slideIndex-1].className += " active";
+                  setTimeout(showSlides, 2000); // Change image every 2 seconds
+                }
+                </script>
+        </section>
+<!------------featured categories--------->
+<div class="categories">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-3">
+              <h3>Books</h3>
+                <img src="images/category-1.jpg" height="420px" width="250px">
+                <button class="bought" type="bought">
+                  <span class="bought__text">BUY</span>
+                  <span class="bought__icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="svg">
+                      <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm0 2c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zM1 2v2h2l3.6 7.59-1.35 2.44C5.52 14.37 5 15.38 5 16.5 5 17.88 6.12 19 7.5 19H19v-2H7.42c-.25 0-.45-.15-.54-.35l.03-.07L8.1 15h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49C21.24 7.22 21 6.7 21 6H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2S15.9 22 17 22s2-.9 2-2-.9-2-2-2zm0 2c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1z"/>
+                    </svg>
+                  </span>
+                </button>
+                
+            </div>
+            <div class="col-3">
+              <h3>Nike Shoes</h3>
+                <img src="images/category-2.jpg" height="420px" width="250px">
+                <button class="bought" type="bought">
+                  <span class="bought__text">BUY</span>
+                  <span class="bought__icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="svg">
+                      <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm0 2c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zM1 2v2h2l3.6 7.59-1.35 2.44C5.52 14.37 5 15.38 5 16.5 5 17.88 6.12 19 7.5 19H19v-2H7.42c-.25 0-.45-.15-.54-.35l.03-.07L8.1 15h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49C21.24 7.22 21 6.7 21 6H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2S15.9 22 17 22s2-.9 2-2-.9-2-2-2zm0 2c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1z"/>
+                    </svg>
+                  </span>
+                </button>
+            </div>
+            <div class="col-3">
+              <h3>Adidas Hoodies</h3>
+                <img src="images/category-3.jpg" height="420px" width="250px">
+                <button class="bought" type="bought">
+                  <span class="bought__text">BUY</span>
+                  <span class="bought__icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="svg">
+                      <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm0 2c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zM1 2v2h2l3.6 7.59-1.35 2.44C5.52 14.37 5 15.38 5 16.5 5 17.88 6.12 19 7.5 19H19v-2H7.42c-.25 0-.45-.15-.54-.35l.03-.07L8.1 15h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49C21.24 7.22 21 6.7 21 6H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2S15.9 22 17 22s2-.9 2-2-.9-2-2-2zm0 2c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1z"/>
+                    </svg>
+                  </span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<!------------suddenre------------->
+<section class="sec-02">
+    <div class="container2">
+      <h3 class="section-title">OFFER SALE</h3>
+      <div class="content2">
+        <div class="image2">
+          <img src="images/ninja.png" alt="">
+        </div>
+        <div class="info">
+          <h3 class="info-title">Kawasaki H2R</h3>
+          <p>
+            A pair of massive ø330 mm Brembo semi-floating discs with a thickness of t5.5 mm deliver superb braking force<br>The addition of Öhlins’ highly acclaimed TTX shock offers numerous rider benefits:
+                          <br><span style="color: orange; font-size: 30px;">&#8226;</span>&nbsp;rear stability
+                          <br><span style="color: orange; font-size: 30px">&#8226;</span>&nbsp;excellent damping and increased riding comfort
+                          <br><span style="color: orange; font-size: 30px">&#8226;</span>&nbsp;Increased rear stability
+                          <a class="buy" href="https://kawasaki-india.com/bikes/ninja-h2r/">BUY NOW &#8594;</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="sec-02">
+    <div class="container2">
+      <div class="content3">
+        <div class="image2">
+          <img src="images/buggatii.png" alt="">
+        </div>
+        <div class="info">
+          <h3 class="info-title">BUGATTI BOLIDE</h3>
+          <p>At a speed of 304.773 mph (490.484 km/h), <br>it is since considered the fastest series production car in the world.     
+   <a href="https://www.bugatti.com/divo/" ><h5>Buy now<span></span><span></span><span></span><span></span></h5></a></p>
+          </p>
+        </div>
+      </div>
+    </div>
+    
+  <script>
+    //common reveal options to create reveal animations
+    ScrollReveal({
+      //reset: true,
+      distance: '60px',
+      duration: 2500,
+      delay: 400
+    });
+
+    //target elements, and specify options to create reveal animations
+    ScrollReveal().reveal('.main-title, .section-title', { delay: 500, origin: 'left' });
+    ScrollReveal().reveal('.sec-01 .image2, .info', { delay: 600, origin: 'bottom' });
+    ScrollReveal().reveal('.text-box', { delay: 700, origin: 'right' });
+    ScrollReveal().reveal('.media-icons i', { delay: 500, origin: 'bottom', interval: 200 });
+    ScrollReveal().reveal('.sec-02 .image2, .sec-03 .image', { delay: 500, origin: 'top' });
+    ScrollReveal().reveal('.media-info li', { delay: 500, origin: 'left', interval: 200 });
+  </script>
+  </section>
+  <!------------slide2--------------->
+  <section>
+  <div class="slider">
+    <div class="slide active">
+      <img src="images/slide1.jpg" alt="">
+      <div class="info">
+        <h2>Sationary</h2>
+        <p>Get What You Want For Study Purpose</p>
+      </div>
+    </div>
+    <div class="slide">
+      <img src="images/slide2.jpg" alt="">
+      <div class="info">
+        <h2>Home Decor</h2>
+        <p>Find The Best For Your Home</p>
+      </div>
+    </div>
+    <div class="slide">
+      <img src="images/slide3.jpg" alt="">
+      <div class="info">
+        <h2>50%-70%</h2>
+        <p>Lee cooper,Roadster,Arrow</p>
+      </div>
+    </div>
+    <div class="slide">
+      <img src="images/slide4.jpg" alt="">
+      <div class="info">
+        <h2>Beauty</h2>
+        <p>Get The Best Beauty Products From Korea</p>
+      </div>
+    </div>
+    <div class="slide">
+      <img src="images/slide5.jpg" alt="">
+      <div class="info">
+        <h2>Upcoming-Offers</h2>
+      </div>
+    </div>
+    <div class="navigation">
+      <i class="fas fa-chevron-left prev-btn"></i>
+      <i class="fas fa-chevron-right next-btn"></i>
+    </div>
+    <div class="navigation-visibility">
+      <div class="slide-icon active"></div>
+      <div class="slide-icon"></div>
+      <div class="slide-icon"></div>
+      <div class="slide-icon"></div>
+      <div class="slide-icon"></div>
+    </div>
+  </div>
+  
+  <script type="text/javascript">
+    const slider = document.querySelector(".slider");
+    const nextBtn = document.querySelector(".next-btn");
+    const prevBtn = document.querySelector(".prev-btn");
+    const slides = document.querySelectorAll(".slide");
+    const slideIcons = document.querySelectorAll(".slide-icon");
+    const numberOfSlides = slides.length;
+    var slideNumber = 0;
+
+    //image slider next button
+    nextBtn.addEventListener("click", () => {
+      slides.forEach((slide) => {
+        slide.classList.remove("active");
+      });
+      slideIcons.forEach((slideIcon) => {
+        slideIcon.classList.remove("active");
+      });
+
+      slideNumber++;
+
+      if(slideNumber > (numberOfSlides - 1)){
+        slideNumber = 0;
+      }
+
+      slides[slideNumber].classList.add("active");
+      slideIcons[slideNumber].classList.add("active");
+    });
+
+    //image slider previous button
+    prevBtn.addEventListener("click", () => {
+      slides.forEach((slide) => {
+        slide.classList.remove("active");
+      });
+      slideIcons.forEach((slideIcon) => {
+        slideIcon.classList.remove("active");
+      });
+
+      slideNumber--;
+
+      if(slideNumber < 0){
+        slideNumber = numberOfSlides - 1;
+      }
+
+      slides[slideNumber].classList.add("active");
+      slideIcons[slideNumber].classList.add("active");
+    });
+
+    //image slider autoplay
+    var playSlider;
+
+    var repeater = () => {
+      playSlider = setInterval(function(){
+        slides.forEach((slide) => {
+          slide.classList.remove("active");
+        });
+        slideIcons.forEach((slideIcon) => {
+          slideIcon.classList.remove("active");
+        });
+
+        slideNumber++;
+
+        if(slideNumber > (numberOfSlides - 1)){
+          slideNumber = 0;
+        }
+
+        slides[slideNumber].classList.add("active");
+        slideIcons[slideNumber].classList.add("active");
+      }, 4000);
+    }
+    repeater();
+
+    //stop the image slider autoplay on mouseover
+    slider.addEventListener("mouseover", () => {
+      clearInterval(playSlider);
+    });
+
+    //start the image slider autoplay again on mouseout
+    slider.addEventListener("mouseout", () => {
+      repeater();
+    });
+    </script>
+      </section>
+<!-------------featured products---------->
+<div class="container4">
+    <h2 class="title"><span style="color:orangered ;">INVESTERS</span></h2>
+    <div class="row">
+        <div class="col-4">
+    <div class="box">
+        <div class="imgBox">
+            <img src="images/ratantata.jpeg" alt="">
+        </div>
+        <div class="content4">
+            <h2>RATAN TATA</br>
+            <span> Indian Industrialist, Philanthropist</span></h2>
+        </div>
+    </div>
+        </div>
+        <div class="col-4">
+    <div class="box">
+        <div class="imgBox">
+            <img src="images/anandmahindra.jpg" alt="">
+        </div>
+        <div class="content4">
+            <h2>ANAND MAHINDRA<br>
+            <span>The Chairman of Mahindra Group</span></h2>
+        </div>
+    </div>
+        </div>
+    </div>
+</div>
+<!------------------->
+
+<div class="small-container">
+    <h2 class="title">LIMITED-EDITION</h2>
+    <div class="row">
+        <div class="col-4">
+            <img src="images/limited1.png">
+            <h4><span style="color:bisque ;">NIKE AIR JORDAN</span></h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>₹50000.00</p>
+        </div>
+        <div class="col-4">
+            <img src="images/limited2.png">
+            <h4><span style="color:bisque ;">PUMA FLEXRUN</span></h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+            </div>
+            <p>₹25000.00</p>
+        </div>
+        <div class="col-4">
+            <img src="images/limited3.png">
+            <h4><span style="color:bisque ;">ADIDAS YEZZY</span></h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>₹35000.00</p>
+        </div>
+        <div class="col-4">
+            <img src="images/limited4.png">
+            <h4><span style="color:bisque ;">NEW BALANCE ULTRA</span></h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+            </div>
+            <p>₹15000.00</p>
+        </div>
+    </div>
+   <hr>
+   <!-----categories-------->
+   <div class="category1"></div>
+   <h2><span style="color: beige;">&#8681; Select Hangers Category </span></h2>
+   <figure class="swing" id="faq">
+    <a href="cloth.html"><img src="images/swing1.jpg" width="200" position="left"></a>
+    <a href="groceries.html"><img src="images/swing2.jpg" width="200" position="left"></a>
+    <a href="books.html"><img src="images/swing3.jpg" width="200" position="left"></a>
+    <a href="electronics page.html"><img src="images/swing4.jpg" width="200" position="left"></a>
+    <a href="source.html"><img src="images/swing5.jpg" width="200" position="left"></a>
+  </figure> 
+<!-----------offer------------>
+        <div class="offer">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-2">
+                        <img src="images/plant.png" class="offer-img">
+                    </div>
+                    <div class="col-2">
+                        <p></p>
+                        <h1>SaVe TREES As Much As Possible</h1>
+                        <small>Each Member Should Plant A Tree.<br>You Can Contribute Here To Plant A Tree And To Save Our Future</small><BR>
+                            <a href="http://savetreessaveearth.com/join-us/" class="btn">JOIN US &#8594;</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <!--------testimonial------>
+        <div class="testimonial">
+            <div class="small-container" style="background-color:beige ;">
+                <div class="row">
+                    <div class="col-3">
+                        <i class="fa fa-quote-left"></i>
+                        <p>Grüß Gott,I Bought Missiles Here<br>Really Very And I Like To Buy Again</p>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+                        </div>
+                        <img src="images/user1.jpg">
+                        <h3>ADOLF HITLER</h3>
+                    </div>
+                    <div class="col-3">
+                        <i class="fa fa-quote-left"></i>
+                        <p>Good Service,Best Experience,Loved Very Much</p>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+                        </div>
+                        <img src="images/user2.jpg">
+                        <h3>ROBERT DOWNEY JR</h3>
+                    </div>
+                    <div class="col-3">
+                        <i class="fa fa-quote-left"></i>
+                        <p>Don't Use Amazon,Flipkart,Alibaba !<br>
+                        Change To SASA </p>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+                        </div>
+                        <img src="images/user3.jpg">
+                        <h3>ELON MUSK</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--------------brands-------->
+        <div class="brands">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-5">
+                        <img src="images/logo-godrej.png">
+                    </div>
+                    <div class="col-5">
+                        <img src="images/logo-oppo.png">
+                    </div>
+                    <div class="col-5">
+                        <img src="images/logo-coca-cola.png">
+                    </div>
+                    <div class="col-5">
+                        <img src="images/logo-paypal.png">
+                    </div>
+                    <div class="col-5">
+                        <img src="images/logo-philips.png">
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+        <!------------footer-------->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <h3>Download our App</h3>
+                        <p>Download App for Android and ios mobile phone.</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png">
+                        <img src="images/app-store.png">
+
+                    </div>
+                    </div>
+                    <div class="footer-col-2">
+                        <img src="images/logo.png">
+                        <p>Our purpose is to sustainably make pleasure</p>
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                    </div>
+                    <div class="footer-col-4">
+                        <h3>Follow us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                    </div>
+
+
+                </div>
+                <hr>
+                <p class="copyright">Copyright 2020 </p>
+            </div>
+        </div>
+        <!---------JS FOR TOGGLE MENU------>
+        <script>
+            var MenuItems = document.getElementById("MenuItems");
+
+            MenuItems.style.maxHeight = "0px";
+
+            function menutoggle(){
+                if(MenuItems.style.maxHeight == "0px")
+                {
+                    MenuItems.style.maxHeight = "200px";
+                }
+                else
+                {
+                    MenuItems.style.maxHeight = "0px";
+                }
+            }
+        </script>
+    </body>
+</html>

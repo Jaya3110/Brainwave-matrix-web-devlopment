@@ -1,0 +1,80 @@
+body  
+{  
+    margin: 0;  
+    padding: 0;  
+    background-image: url('https://kids.aman.org.qa/assets/img/bkgnd.jpg');background-size: cover;  
+    font-family:cursive; 
+    font-style: italic; 
+}  
+.login{  
+        width: 350px;  
+        overflow: hidden;  
+        margin: auto;  
+        margin: 50 0 0 550px;  
+        padding: 80px;  
+        background-image:url('https://images.ctfassets.net/co0pvta7hzrh/1HOajBVHsh7xunfUnjpDNE/c94d271e8f90a6bf6016fc1d275d7a74/e_commerce_registration_form_template_thumb.png');background-size: cover; 
+        border-radius: 15px ;  
+          
+}  
+ 
+label{  
+    color:darkslateblue;  
+    font-size: 17px; 
+    text-align: left; 
+}  
+#t{  
+    width: 350px;  
+    height: 40px;  
+    border: none;  
+    border-radius: 3px;  
+    padding-left: 8px;  
+    text-align: left;
+}  
+#pass{  
+    width: 350px;  
+    height: 40px;  
+    border: none;  
+    border-radius: 3px;  
+    padding-left: 8px;  
+}  
+#email{  
+    width: 350px;  
+    height: 40px;  
+    border: none;  
+    border-radius: 3px;  
+    padding-left: 8px;  
+      
+}
+#ph{  
+    width: 350px;  
+    height: 40px;  
+    border: none;  
+    border-radius: 3px;  
+    padding-left: 8px;  
+}  
+#passw{  
+    width: 350px;  
+    height: 40px;  
+    border: none;  
+    border-radius: 3px;  
+    padding-left: 8px;  
+}  
+#log{  
+    width: 250px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 17px; 
+    margin-left:50px; 
+    margin-top:20px;
+    padding-left: 10px;  
+    color:white; 
+    background-color:darkslateblue; 
+}  
+#reg{  
+    width: 100px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 17px; 
+    margin-top:20px; 
+} 
+ 
